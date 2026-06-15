@@ -1,0 +1,165 @@
+body{
+    background-color: #d9c3a5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #a85f42;
+
+    background-image:
+        linear-gradient(
+            rgba(168,95,66,0.60),
+            rgba(168,95,66,0.60)
+        ),
+        url("./IMAGENS/Adinkra.jpg");
+
+    background-repeat: repeat;
+    background-size: auto, 220px auto;
+
+    min-height: 180px;
+
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 4px solid #ffd27a;
+}
+
+header > *{
+    position: relative;
+    z-index: 1;
+}
+
+header h1{
+    color: #ffd27a;
+
+    font-size: 3.2rem;
+    font-weight: bold;
+
+    margin: 0;
+
+    white-space: nowrap;
+
+    padding: 10px 20px;
+
+    background-color: rgba(107, 29, 29, 0.75);
+
+    border-left: 6px solid #ffd27a;
+
+    border-radius: 8px;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+figure{
+    margin: 0;
+}
+
+figure img{
+    border-radius: 50%;
+    border: 4px solid #f5e6cc;
+}
+
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+
+    margin-left: auto;
+
+    padding: 12px 25px;
+
+    background-color: rgba(107, 29, 29, 0.75);
+
+    border-radius: 8px;
+}
+
+nav a{
+    text-decoration: none;
+
+    color: #fff8e8;
+
+    font-weight: bold;
+
+    font-size: 1.1rem;
+
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ffd27a;
+}
+
+main{
+    padding: 30px;
+    color: #2b1b12;
+}
+
+section{
+    background-color: #f5e6cc;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
+    transition: 0.3s;
+}
+
+section:hover{
+    transform: scale(1.01);
+}
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+
+        margin-left: 0;
+
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+footer{
+    background-color: #6b1d1d;
+
+    color: #f5e6cc;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
